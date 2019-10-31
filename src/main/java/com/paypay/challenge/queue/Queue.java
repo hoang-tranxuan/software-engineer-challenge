@@ -10,6 +10,9 @@ package com.paypay.challenge.queue;
  *            type of the elements put into the queue.
  */
 public interface Queue<T> {
+    /** A constant defining the maximum number of elements a queue can contains. */
+    public static final int MAX_ELEMENTS = Integer.MAX_VALUE;
+
     /**
      * Adds the element t into the queue and returns that new queue.
      * 
@@ -20,7 +23,7 @@ public interface Queue<T> {
     public Queue<T> enQueue(T t);
 
     /**
-     * Removes the element at the beginning of the queue, and returns the new queue.
+     * Removes the element at the beginning of the queue, and returns a new queue.
      * 
      * @return the new queue without the removed element.
      */
