@@ -18,9 +18,9 @@ public class Utilities {
      * @return
      *         <ul>
      *         <li>the {@code Date} object representing the input {@code String}
-     *         date.
-     *         <li>{@code null} if any errors occur during the parse of the
-     *         input</li> {@code date} parameter.</li>
+     *         date.</li>
+     *         <li>{@code null} if any errors occur during the parse of the input
+     *         {@code date} parameter.</li>
      *         </ul>
      */
     public static Date stringToDate(String date) {
