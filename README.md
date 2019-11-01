@@ -15,19 +15,19 @@ Source code for the main implementation is grouped as in the following packages:
 
 **Package** | **Description**
 ----------- | ---------------
-[com.paypay.challenge]() | Contains the definition of the main app entry point.
-[com.paypay.challenge.clone]() | Consists of a simple implementation of the deep copy.
-[com.paypay.challenge.exception]() | Defines exceptions that might occur when manipulating immutable queues.
-[com.paypay.challenge.queue]() | 
-[com.paypay.challenge.test.model]() |
-[com.paypay.challenge.test.util]() |
+[com.paypay.challenge](src/main/java/com/paypay/challenge) | Contains the definition of the main app entry point.
+[com.paypay.challenge.clone](src/main/java/com/paypay/challenge/clone) | Consists of a simple implementation of the deep copy.
+[com.paypay.challenge.exception](src/main/java/com/paypay/challenge/exception) | Defines exceptions that might occur when manipulating immutable queues.
+[com.paypay.challenge.queue](src/main/java/com/paypay/challenge/queue) | Provides the core implementation of immutable queues.
+[com.paypay.challenge.test.model](src/main/java/com/paypay/challenge/test/model) | Defines data models used in demonstrating and testing immutable queues.
+[com.paypay.challenge.test.util](src/main/java/com/paypay/challenge/test) | Gives utility method(s) that is(are) needs to initialize/process data during the creation and testing of immutable queues.
 
 Sour code for tests is written in the following JUnit test classes:
 
 **Class** | **Description**
 ----------- | ---------------
-[DeepCopyTest.java]() |
-[SlowImmutableQueueTest.java]() |
+[DeepCopyTest.java](src/test/java/com/paypay/challenge/clone/DeepCopyTest.java) | Provides unit testcases for the [DeepCopy.java](src/main/java/com/paypay/challenge/clone/DeepCopy.java) class.
+[SlowImmutableQueueTest.java](src/test/java/com/paypay/challenge/queue/SlowImmutableQueueTest.java) | Provides unit testcases for the [SlowImmutableQueue.java](src/main/java/com/paypay/challenge/queue/SlowImmutableQueue.java) class.
 
 ## Build and Run Tests
 This project is set to use [Maven](https://maven.apache.org/) as build/testing tool. The implementation is written in Java and is specified to use Java 8.
